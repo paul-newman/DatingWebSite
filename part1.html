@@ -12,8 +12,8 @@
 	<fieldset>
 		<legend>Your Face</legend>
 		<label>Your Image :</label>
-		<input type="file" name="fileToUpload" required=""><br>
-		<label id="preview">Image Preview:</label>
+		<input type="file" name="fileToUpload"><br>
+		<label>Image Preview:</label>
 	</fieldset>
 
 </div>
@@ -23,20 +23,18 @@
 		<fieldset>
 			<legend>Your General Details</legend>
 			<label for="yourName">Your Name:</label>
-			<input type="text" id="yourName" name="yourName" placeholder="Type in your name" autofocus="" required=""><br>
+			<input type="text" id="yourName" name="yourName" placeholder="Type in your name" autofocus=""><br>
 			<label for="gender">Gender:</label>
-			<input type="radio" id="gender" name="gender" value="" required="">Male
-			<input type="radio" id="gender" name="gender" value="" required="">Female
-			<br>
+			<input type="radio" id="gender" name="gender" value="">Male
+			<input type="radio" id="gender" name="gender" value="">Female<br>
 			<label for="age">Age:</label>
 			<input type="number" min="0" max="99" id="age" name="age" required=""><br>
 			<label for="dateOfBirth">Date of birth:</label>
-			<input type="date" id="dateOfBirth" name="dateOfBirth"><br>
+			<input type="date" id="dateOfBirth" name="dateOfBirth" required=""><br>
 			<label for="color">Favorite color:</label>
 			<input type="color" id="color" name="color"> <br>
 			<label for="country">Which country:</label>
 			<select id="country" name="country">
-				<option></option>
 				<option value="hk">Hongkong</option>
 				<option value="ng">Nigeria</option>
 				<option value="jp">Japan</option>
@@ -59,9 +57,9 @@
 			<fieldset>
 				<legend>Your Contact Information</legend>
 				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required=""><br>
+				<input type="text" id="email" name="email" required=""><br>
 				<label for="mobile">Mobile:</label>
-				<input type="tel" id="mobile" name="mobile"><br>
+				<input type="text" id="mobile" name="mobile"><br>
 				<label for="address">Address:</label>
 				<textarea rows="3" cols="60" id="address" name="address">
 				</textarea><br>
