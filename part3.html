@@ -37,6 +37,15 @@
 		input:hover {
 			font-size: 40px;
 		}
+		span.indicators1 {
+			background: #f20c27;
+			color: white;
+
+		}
+		span.indicators2 {
+			background: #B516B0;
+			color: white;
+		}
 	</style>
 </head>
 <body>
@@ -86,9 +95,9 @@
 			<fieldset>
 				<legend>Your Indicators</legend>
 				<label for="height">Height:</label>
-				Short:<input type="range" min="0" max="100" step="5" value="50" id="height" name="height"> Tall:<br>
+				<span class="indicators1">Short:</span><input type="range" min="0" max="100" step="5" value="50" id="height" name="height"> <span class="indicators2">Tall:</span><br>
 				<label for="salary">Salary:</label>
-				Poor:<input type="range" id="salary" min="0" max="100" step="5" value="50" name="salary">Rich:
+				<span class="indicators1">Poor:</span><input type="range" id="salary" min="0" max="100" step="5" value="50" name="salary"><span class="indicators2">Rich:</span>
 			</fieldset>
 		</div>
 		<br>
